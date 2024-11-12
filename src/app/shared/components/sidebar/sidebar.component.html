@@ -1,1 +1,23 @@
-<p class="bg-main">sidebar works!</p>
+<section id="sidebar" class="bg-main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="logo d-flex justify-content-center  my-5 pointer">
+              <img src="../../../../assets/images/logo.svg" alt="logo">
+            </div>
+            <div class="links d-flex justify-content-center">
+              <ul class="my-5">
+              <li *ngFor="let item of menu" mat-icon-button [matTooltip]="item.title"
+                  [routerLink]="item.link"
+                  routerLinkActive="bg-active">
+                <a>
+                  <mat-icon>{{item.icon}}</mat-icon>
+                </a>
+              </li>
+            </ul> 
+            </div>
+            <div class="d-flex my-5 justify-content-center logout">
+                <a><mat-icon mat-icon-button matTooltip="Log out">logout</mat-icon></a>
+            </div> 
+        </div>
+    </div>
+</section>

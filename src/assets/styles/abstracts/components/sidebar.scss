@@ -1,0 +1,41 @@
+#sidebar {
+    height: 100vh;
+    transition: all 100ms ease-in;
+    border-radius: 0px 30px 30px 0px;
+    color: white;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    a {
+        font-size: xx-large;
+        margin: 8px 0px;
+        opacity: 0.7;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    li {
+        list-style: none !important;
+        margin-right: 20px;
+    }
+    
+    .bg-active {
+        a {
+            opacity: 1 !important;
+        }
+      }
+
+    @media (min-width: 900px) {
+        height: calc(100vh + 100px );
+      }
+}
+.bg-active {
+    a {
+        opacity: 1 !important;
+    }
+  }
+// @include response(mobile){
+//     #sidebar{
+//         height: calc(100vh + 100px );
+//     }
+// }
