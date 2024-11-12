@@ -1,0 +1,24 @@
+$main-color: #FF7F5C;
+$secondary-color: #3D5161;
+$third-color: #F9F5F3;
+
+
+.bg-main {
+    background-color: $main-color;
+  }
+  .bg-secondaryColor {
+    background-color: $secondary-color;
+  }
+  .bg-third {
+    background-color: $third-color;
+  }
+  
+  .main-color {
+    color: $main-color;
+  }
+  .secondary-color {
+    color: $secondary-color;
+  }
+  .third-color {
+    color: $third-color;
+  }
