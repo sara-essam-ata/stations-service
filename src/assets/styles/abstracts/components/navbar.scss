@@ -1,0 +1,59 @@
+
+#navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid  #000;
+    .dot {
+        font-size: xx-large;
+        font-weight: 900;
+        margin: 0;
+    }
+    .range,.range-icon {
+        font-size: x-large;
+        margin: 0 5px;
+    }
+    .info {
+        font-size: 14px;
+        position: relative;
+        &::after{
+            content: "Stations";
+            position: absolute;
+            top: 75%;
+            left: 0;
+        }
+    }
+    .info-2 {
+        position: relative;
+        font-size: 14px;
+        &::after{
+            content: "Update";
+            position: absolute;
+            top: 75%;
+            left: 0;
+        }
+    }
+    //overide on amgular material taps
+    .mdc-tab-indicator__content {
+        display: none !important;
+    }
+    .mdc-tab-indicator--active {
+        background-color: #FF7F5C !important;
+        border-radius: 30px;
+        .mdc-tab__text-label {
+            color: #ffffff !important;
+        }  
+    }
+    .mat-mdc-focus-indicator:hover{
+        background-color: #FF7F5C !important;
+        border-radius: 30px;
+        .mdc-tab__text-label {
+            color: #ffffff !important;
+        }  
+    }
+    //datepicker
+    .mat-mdc-text-field-wrapper {
+        background-color: #ffffff ;
+    }
+    .mdc-icon-button {
+        color: #FF7F5C !important;
+    }
+}

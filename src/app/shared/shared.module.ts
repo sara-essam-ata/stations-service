@@ -5,6 +5,11 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
 import { RouterLink, RouterModule } from '@angular/router';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {provideNativeDateAdapter} from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [NavbarComponent,SidebarComponent],
@@ -14,14 +19,20 @@ import { RouterLink, RouterModule } from '@angular/router';
     MatIconModule,
     RouterLink,
     RouterModule,
+    MatTabsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     NavbarComponent,
     SidebarComponent,
     MatTooltipModule,
     MatIconModule,
-    RouterLink,
-    RouterModule,
+    
+  ],
+  providers: [
+    provideNativeDateAdapter()
   ]
 })
 export class SharedModule { }
