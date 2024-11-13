@@ -11,6 +11,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { ChartModule } from 'primeng/chart';
+import { routes } from '../app.routes';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { ChartModule } from 'primeng/chart';
     MatTooltipModule,
     MatIconModule,
     RouterLink,
-    RouterModule,
+    RouterModule.forRoot(routes,{useHash:true}),
     MatTabsModule,
     MatDatepickerModule,
     MatFormFieldModule,
