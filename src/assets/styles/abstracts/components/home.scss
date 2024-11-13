@@ -1,0 +1,32 @@
+#home {
+    color: #3D5161;
+    .data-item {
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 30px;
+        p,h4{
+            margin: 0;
+            font-weight: 500;
+        }
+        h4{
+            font-size: xx-large;
+        }
+    }
+    .list-item {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        h5 {
+            border-bottom: #3D5161 1px solid;
+            i {
+                font-size: xx-large;
+                color: #ff7f5c;
+            }
+        }
+    }
+    table {
+        td,th {
+            border: none !important;
+        }
+    }
+}

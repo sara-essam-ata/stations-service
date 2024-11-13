@@ -10,6 +10,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
+import { ChartModule } from 'primeng/chart';
+
 
 @NgModule({
   declarations: [NavbarComponent,SidebarComponent],
@@ -22,14 +24,15 @@ import { MatInputModule } from '@angular/material/input';
     MatTabsModule,
     MatDatepickerModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    // ChartModule
   ],
   exports: [
     NavbarComponent,
     SidebarComponent,
     MatTooltipModule,
     MatIconModule,
-    
+    MatTabsModule
   ],
   providers: [
     provideNativeDateAdapter()

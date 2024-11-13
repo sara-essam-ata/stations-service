@@ -3,3 +3,29 @@
 .pointer,a {
     cursor: pointer;
 }
+
+.dot {
+    font-size: xx-large;
+    font-weight: 900;
+    margin: 0;
+    color: #FF7F5C;
+}
+
+//overide on amgular material taps
+.mdc-tab-indicator__content {
+    display: none !important;
+}
+.mdc-tab-indicator--active {
+    background-color: #FF7F5C !important;
+    border-radius: 30px;
+    .mdc-tab__text-label {
+        color: #ffffff !important;
+    }  
+}
+.mat-mdc-focus-indicator:hover{
+    background-color: #ff7f5c !important;
+    border-radius: 30px;
+    .mdc-tab__text-label {
+        color: #ffffff !important;
+    }  
+}

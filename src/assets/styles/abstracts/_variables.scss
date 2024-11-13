@@ -1,6 +1,8 @@
 $main-color: #FF7F5C;
 $secondary-color: #3D5161;
 $third-color: #F9F5F3;
+$fourth-color: #00CBC0;
+
 
 
 .bg-main {
@@ -13,6 +15,7 @@ $third-color: #F9F5F3;
     background-color: $third-color;
   }
   
+  
   .main-color {
     color: $main-color;
   }
@@ -21,4 +24,7 @@ $third-color: #F9F5F3;
   }
   .third-color {
     color: $third-color;
+  }
+  .fourth-color {
+    color: $fourth-color;
   }

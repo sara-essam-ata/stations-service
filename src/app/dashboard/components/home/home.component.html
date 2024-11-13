@@ -1,1 +1,172 @@
-<p>home works!</p>
+<section id="home">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-9">
+                <div class="row justify-content-between">
+                    <!-- Data show -->
+                    <div class="col-md-3">
+                        <div class="data-item">
+                            <h4>71,028<span class="h6"> EGP</span></h4>
+                            <p>Total Value</p>
+                            <p class="main-color"><span><i class="fa-solid fa-caret-down"></i></span> 2%</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="data-item">
+                            <h4>20,000<span class="h6"> m<sup>3</sup></span></h4>
+                            <p>Total Sales</p>
+                            <p class="fourth-color"><span><i class="fa-solid fa-caret-up"></i></span> 50m<sup>3</sup></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="data-item">
+                            <h4>20,000<span class="h6"> m<sup>3</sup></span></h4>
+                            <p>Avg Sales</p>
+                            <p class="main-color"><span><i class="fa-solid fa-caret-down"></i></span> 50m<sup>3</sup></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="data-item">
+                            <h4>1567</h4>
+                            <p class="fs-6 text-nowrap">Total Transaction Count</p>
+                            <p class="fourth-color"><span><i class="fa-solid fa-caret-up"></i></span> 20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 bg-third rounded-pill">
+                    <mat-tab-group animationDuration="0ms">
+                        <!-- stations graph -->
+                        <mat-tab label="Graph">
+                            <div class=" mt-2">
+                                <div class="bg-white rounded p-5">
+                                    <p class="border-bottom fw-bold">STATIONS ACTIVATES OVERVIEW</p>
+                                    <canvas #chartCanvas></canvas>
+                                </div>
+                            </div>
+                        </mat-tab>
+                        <!-- stations list -->
+                        <mat-tab label="List">
+                            <div class="container mt-5">
+                                <div class="row">
+                                    <div class="list-item">
+                                        <h5>
+                                            <span class="dot">.</span>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span> STATION NAME</span>
+                                        </h5> 
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Total Sales</th>
+                                                    <td>62,721 m<sup>3</sup></td>
+                                                    <th>Compression State</th>
+                                                    <td>Compression</td>
+                                                    <th>Max Transaction / hour</th>
+                                                    <td>20</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>Total Value</th>
+                                                    <td>550 <span>EGP</span></td>
+                                                    <th>Total Transaction Count</th>
+                                                    <td>5161</td>
+                                                    <th>Max Transaction Date-Time</th>
+                                                    <td>8-1-2021 | 10:16 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table> 
+                                    </div>
+                                </div> 
+
+                                <div class="row mt-4">
+                                    <div class="list-item">
+                                        <h5>
+                                            <span class="dot">.</span>
+                                            <i class="fa-solid fa-gas-pump"></i>
+                                            <span> STATION NAME</span>
+                                        </h5> 
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Total Sales</th>
+                                                    <td>62,721 m<sup>3</sup></td>
+                                                    <th>Compression State</th>
+                                                    <td>Compression</td>
+                                                    <th>Max Transaction / hour</th>
+                                                    <td>20</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th>Total Value</th>
+                                                    <td>550 <span>EGP</span></td>
+                                                    <th>Total Transaction Count</th>
+                                                    <td>5161</td>
+                                                    <th>Max Transaction Date-Time</th>
+                                                    <td>8-1-2021 | 10:16 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table> 
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                        </mat-tab>
+                    </mat-tab-group>
+                </div>
+            </div>
+
+            <!-- sales section -->
+            <div class="col-md-3">
+                <div class="text-center">
+                    <h4>Hourly Sales</h4>
+                    <!-- Sales Chart -->
+                    <div>
+                        <canvas #radarCanvas></canvas> 
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h4 class="text-center">Sales by Station</h4>
+                    <div>
+                        <div class="progress-info mt-4">
+                            <div>
+                                <i class="fa-solid fa-gas-pump text-start"></i>
+                                <span class="text-start"> Station Name</span>
+                                <span class="ms-5 text-end">
+                                    20,000<span> m<sup>3</sup></span>
+                                </span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50"></div>
+                            </div>
+                        </div>
+                        <div class="progress-info mt-4">
+                            <div>
+                                <i class="fa-solid fa-gas-pump text-start"></i>
+                                <span class="text-start"> Station Name</span>
+                                <span class="ms-5 text-end">
+                                    20,000<span> m<sup>3</sup></span>
+                                </span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-info mt-4">
+                            <div>
+                                <i class="fa-solid fa-gas-pump text-start"></i>
+                                <span class="text-start"> Station Name</span>
+                                <span class="ms-5 text-end">
+                                    20,000<span> m<sup>3</sup></span>
+                                </span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-secondaryColor" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
