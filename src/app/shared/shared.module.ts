@@ -21,7 +21,7 @@ import { routes } from '../app.routes';
     MatTooltipModule,
     MatIconModule,
     RouterLink,
-    RouterModule.forRoot(routes,{useHash:true}),
+    RouterModule,
     MatTabsModule,
     MatDatepickerModule,
     MatFormFieldModule,
